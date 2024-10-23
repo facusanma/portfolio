@@ -1,39 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8"/>
-    <title>Portfolio Facundo San Martín</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <!--FUENTES-->
+    <title>Curriculum Vitae | Facundo San Martin</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--inicio del header-->
     <header>
-        <nav class="botones">  
+        <h1>Facu sanma</h1>
+        <nav class="botonera">
+            <div>
+                <img src="img/corner-down-right.svg" width="60px" height="60px" alt="flecha">
+            </div>
             <ul>
-                <li>
-                    <a href="SobreMi.html"> Sobre mi</a>
-                </li>
-                <li>
-                        <a href="Proyectos.html"> Proyectos</a>
-                </li>
-                <li>
-                    <a href="Contacto.html"> Trabajemos juntos</a>
-                </li>
+                <li><a href="sobremi.html">Sobre mi</a> </li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="formulario.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <!--inicio del header-->
-    <!--inicio del main-->
-    <main></main>
-    <!--fin del main-->
-    <!--inicio del footer-->
-    <footer>
-    <div>
-        <p>Facundo San Martin</p>
-        <p>Portfolio Computación III</p>
-    </div>
-    </footer>
+<!-- Fin del header-->
+<!--Comienzo del main-->
+    <main>
+        <div class="botonflotante">
+            <a href="index.html"><img src="img/pelota.png" width="40px" height="40px" alt="iconopelota"></a> 
+        </div>
+        <h2>HOLA!</h2>
+        <div class="line"></div>
+        <section>
+            <article id="sobremi">
+                <div>
+                    <img class="foto" src="img/fotofacu.png" alt="fotofacu">
+                </div>
+                <div class="yop">
+                    <h3>Quien soy?</h3>
+                    <p>Soy Facundo, aunque muchos me conocen como Sanma, un apodo que proviene de mi apellido. Tengo 28 años y desde siempre fui un apasionado del fútbol, el diseño y la tecnología.
+                        Recibido de tecnico informático y estudiante de diseño, te invito a conocer más sobre mí.</p>
+                </div>
+            </article>
+        </section>
+        </section>
+        <section id="proyectos">
+            <article class="proyectos">
+                <h3>PROYECTOS</h3>
+                <img src="img/proyectos/destilar1.png" alt="">
+                <img src="img/proyectos/free1.png" alt="">
+                <img src="img/proyectos/lata1.png" alt="">
+                </div>
+            </article>
+        </section>
+    </main>
+<!--Fin del Main-->
+<!-- Footer -->
+        <footer>
+            <section>
+                <h4>Encontrame</h4>
+                <div class="logoscontacto">
+                    <a href="https://www.linkedin.com/in/facundo-san-martin-291924197/" target="_blank"><img src="img/linkedin-fill-svgrepo-com.svg" width="30px" height="30 px" alt="icono linkedin"></a>
+                    <a href="https://ar.pinterest.com/faacusanma/" target="_blank"><img src="img/pinterest-fill-svgrepo-com.svg" width="30px" height="30 px" alt="icono pinterest"></a>
+                    <a href="mailto:faacusanma@gmail.com" target="_blank"> <img src="img/google-fill-svgrepo-com.svg" width="30 px" height="30 px" alt="icono Gmail"></a>
+                </div>
+            </section>
+        </footer>
+<!-- Fin de footer -->
 </body>
 </html>
