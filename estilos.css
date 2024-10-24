@@ -244,11 +244,8 @@ h3{
   align-items:center;
 }
 .proyectos img{
-  margin: 20px;
+  margin: 10px;
   cursor: pointer;
-  padding: 20px;
-  background-color: #283747;
-  border-radius: 30px;
 }
 footer{
   display: flex;
@@ -258,9 +255,4 @@ footer{
 .logoscontacto{
   padding: 0px 15px;
   filter: invert(15%) sepia(19%) saturate(1113%) hue-rotate(168deg) brightness(93%) contrast(83%);
-}
-.line {
-    width: 50vw; /
-    height: 2px; 
-    background-color: #000;
 }
