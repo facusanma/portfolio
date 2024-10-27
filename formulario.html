@@ -1,46 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8"/>
+    <title>Curriculum Vitae | Facundo San Martin</title>
     <link href="estilos.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-<!--Fuentes-->
+    <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Knewave&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        
+        <nav class="botonera">
+            <a href="index.html"><h1>Facu<br>Sanma</h1></a>
+            <ul>
+                <li><a href="sobremi.html">Sobre mi</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li class="contacto"><a href="formulario.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <h2 class="titulo-form">Trabajamos juntos?</h2>
-            <h3 class="h3-form">Contactame</h3>
-            <form>
-                <div class="card">
-                    <span class="title">Contactame</span>
-                    <form class="form">
-                        <div class="group">
-                        <input placeholder="" type="text" maxlength="50" required="">
-                        <label for="nombre">Nombre y apellido</label>
-                        </div>
-                <div class="group">
-                    <input placeholder="" type="email" id="email" maxlength="50" name="email" required="">
-                    <label for="email">Email</label>
-                </div>
-                <div class="group">
-                    <input placeholder="" type="tel" id="telefono" maxlength="50" name="telefono" required="">
-                    <label for="tel">Teléfono</label>
-                </div>
-                <div class="group">
-                    <input placeholder="" type="text" id="asunto" maxlength="50" name="asunto" required="">
-                    <label for="tel">Asunto</label>
-                </div>
-                <div class="group">
-                    <textarea placeholder="" id="comment" name="comment" rows="5" required=""></textarea>
-                    <label for="comment">Dejame tu comentario</label>
-                </div>
-            </form>
+        <h2>Trabajamos juntos?</h2>
+    <div class="fondoform">
+        <div class="contenedor">
+            <div class="formulario">
+                <input type="input" class="formcampo" placeholder="Name" required="">
+                <label for="name" class="formlabel">Nombre y Apellido</label>
+            </div>
+            <div class="formulario">
+                <input type="input" class="formcampo" placeholder="Name" required="">
+                <label for="name" class="formlabel">Email</label>
+            </div>
+        </div>
+        <div class="contenedor">
+            <div class="formulario">
+                <input type="input" class="formcampo" placeholder="Name" required="">
+                <label for="name" class="formlabel">Teléfono</label>
+            </div>
+            <div class="formulario">
+                <input type="input" class="formcampo" placeholder="Name" required="">
+                <label for="name" class="formlabel">Asunto</label>
+            </div>
+        </div>
+        <div class="contenedor">
+            <div class="formulario">
+                <input type="input" class="formcampo" placeholder="Name" required="">
+                <label for="name" class="formlabel">Comentario</label>
+            </div>
+        </div>
+        <div class="botonenviar">
+            <button>Enviar</button>
+        </div>
+    </div>
     </main>
 </body>
 <!--FIN DEL FORMULARIO-->

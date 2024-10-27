@@ -1,58 +1,48 @@
-@charset "utf-8" ;
-/* CSS Document */
 @charset "utf-8";
-/* CSS Document */
-body{
-  background:radial-gradient(circle, #E56A26, #FFFF, #E56A26);
-}
+
 header{
   padding: 20px 5px;
   border-radius: 10px ;
 }
-.botonflotante{
-  position:fixed;
-  border-radius: 20px;
-  background-color: #ffc86ab9;
-  padding: 10px;
-  top: 300px;
-  right: 8px;
-  border: 2px solid #283747;
-}
+/*inicio nav*/
 .botonera a{
-  margin: 0 20px;
   padding: 10px 30px;
-  background-color:#FFCF7B;
-  color: black;
-  font-size: 30px;
+  color: #283542;
+  font-size: 20px;
   border-radius: 30px;
   cursor: pointer;
   font-family: sans-serif;
   text-decoration: none;
-  color: #283747;
 }
-.botonera a:hover {
-  color: #ffcf7b;
-  background-color: #283747
+.botonera ul li:hover {
+  text-decoration: 2px underline #e66e1e;
+  text-underline-offset: 10px; /*espaciado entre linea y texto*/
 }
 .botonera {
+  width: 65%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+.contacto{
+  align-items: center;
+  padding: 15px;
+  background-color: #e66e1e;
+  border-radius: 20px;
 }
 nav ul li {
   display: inline;
   flex-direction: row;
   justify-content: center;
-}
-nav ul {
   list-style: none;
 }
+/*fin de nav*/
 main, p {
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 30px;
+  font-size: 1.2em;
   color: #283747;
 }
 .foto{
@@ -81,29 +71,123 @@ main, p {
   padding: 8px 25px
 }
 h1{
-  font-family: "Nerko One";
-  font-weight: 100;
+  font-family: "Knewave";
+  font-weight: 400;
   font-style: normal;
-  font-size: 70px;
-  color: white;
-  text-align: center;
-  justify-content: center;
+  font-size: 1.2em;
+  color: #283542;
+  align-items: center;
 }
-h2 {
-  font-family: "Gabarito", sans-serif;
-  font-optical-sizing: auto;
-  font-size: 60px;
-  font-weight: 600;
-  font-style: medium;
+.subrayado{
+  width: 600px;
+  height: 60px;
+  margin-left: 30px;
+  border-bottom: 3px solid #e66e1e;
 }
 h3{
-  font-family: "Rubik", sans-serif;
+  font-family: "Gabarito", sans-serif;
   font-optical-sizing: auto;
-  font-size: 45px;
+  font-size: 2em;
   font-weight: 600;
   font-style: normal;
   color: #283542
 }
+/*hoover proyectos*/
+.card {
+  position: relative;
+  width: 450px;
+  height: 420px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;  
+  background-color: lightgray 50% / cover no-repeat, lightgray 0px -1.846px / 100% 100.879% no-repeat;
+  box-shadow: -8px 8px 21.6px -2px rgba(229, 105, 38, 0.767);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card img {
+  width: 450px;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card:hover img{
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgb(255, 115, 0);
+  opacity: 70%;
+}
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+}
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+.card__title {
+  display: flex;
+  justify-content: center;
+  margin: 170px 0px;
+  font-size: 1.5em;
+  color: #283542;
+  font-weight: 700;
+  align-content: center;
+}
+.contenedorcard{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 70px;
+}
+.card a{
+  text-decoration: none;
+}
+/*fin de hoover proyectos*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .expe{
   display: flex;
@@ -243,9 +327,15 @@ h3{
   padding-bottom: 30px;
   align-items:center;
 }
-.proyectos img{
-  margin: 10px;
-  cursor: pointer;
+.proy1 {
+  display: flex;
+    justify-content: space-evenly;
+    margin: 50px 200px;
+}
+.proy1 img{
+  border-radius: 15px;
+  background-color: lightgray 50% / cover no-repeat, lightgray 0px -1.846px / 100% 100.879% no-repeat;
+  box-shadow: -8px 8px 21.6px -2px rgba(229, 106, 38, 0.54);
 }
 footer{
   display: flex;
@@ -256,91 +346,113 @@ footer{
   padding: 0px 15px;
   filter: invert(15%) sepia(19%) saturate(1113%) hue-rotate(168deg) brightness(93%) contrast(83%);
 }
-
 /*INICIO de FORMULARIO*/
-.card {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  width: 350px;
-  display: flex;
-  flex-direction: column;
-}
-
-.title {
-  font-size: 24px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.form {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.group {
+.formulario {
   position: relative;
-}
-
-.form .group label {
-  font-size: 14px;
-  color: rgb(99, 102, 102);
-  position: absolute;
-  top: -10px;
-  left: 10px;
-  background-color: #fff;
-  transition: all .3s ease;
-}
-
-.form .group input,
-.form .group textarea {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
-  outline: 0;
+  padding: 20px 0 0;
   width: 100%;
-  background-color: transparent;
+  max-width: 180px;
 }
-
-.form .group input:placeholder-shown+ label, .form .group textarea:placeholder-shown +label {
-  top: 10px;
-  background-color: transparent;
-}
-
-.form .group input:focus,
-.form .group textarea:focus {
-  border-color: #3366cc;
-}
-
-.form .group input:focus+ label, .form .group textarea:focus +label {
-  top: -10px;
-  left: 10px;
-  background-color: #fff;
-  color: #3366cc;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.form .group textarea {
-  resize: none;
-  height: 100px;
-}
-
-.form button {
-  background-color: #3366cc;
-  color: #fff;
+.formcampo{
+  font-family: "rubik";
+  width: 100%;
   border: none;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 16px;
+  border-bottom: 2px solid #e66e1e;
+  outline: 0;
+  font-size: 0.5em;
+  color: #000000;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.formcampo::placeholder {
+  color: transparent;
+}
+.formcampo:placeholder-shown ~ .formlabel {
+  font-size: 17px;
+  cursor: text;
+  top: 20px;
+}
+.formlabel {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #9b9b9b;
+  pointer-events: none;
+}
+.formcampo:focus {
+  padding-bottom: 6px;
+  font-weight: 400;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #e66e1e,#ffc686);
+  border-image-slice: 1;
+}
+.formcampo:focus ~ .formlabel {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #ffc686;
+  font-weight: 700;
+}
+/* reset input */
+.formcampo:required, .formcampo:invalid {
+  box-shadow: none;
+}
+.contenedor{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin: 40px 10px;
+}
+/*boton enviar*/
+button {
+  font-size: 18px;
+  color: #e66e1e;
+  font-family: "Gabarito";
+  font-weight: 650;
   cursor: pointer;
-  transition: all 0.3s ease;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
 }
-
-.form button:hover {
-  background-color: #27408b;
+button:focus,
+button:hover {
+  color:#ffc686; 
 }
-
+button:focus:after,
+button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #e66e1e;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+.botonenviar {
+  display: flex;
+  justify-content: center;
+}
+.fondoform{
+  border-radius: 50px;
+  background-color: #283542;
+  padding: 30px;
+  margin: 0px 600px;
+}
 /*FIN de FORMULARIO*/
