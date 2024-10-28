@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+body {
+  background-image: radial-gradient(circle, #ffffff, #fbf6fc, #fcecf5, #fee2e8, #ffd9d7, #ffcdc3, #ffc2ad, #fcb894, #f8a579, #f3925e, #ec7e43, #e56a26);
+  }
 header{
   padding: 20px 5px;
   border-radius: 10px ;
