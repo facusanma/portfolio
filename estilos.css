@@ -1,8 +1,9 @@
 @charset "utf-8";
 
 body {
-  background-image: radial-gradient(circle, #ffffff, #fbf6fc, #fcecf5, #fee2e8, #ffd9d7, #ffcdc3, #ffc2ad, #fcb894, #f8a579, #f3925e, #ec7e43, #e56a26);
-  }
+  background: rgb(254,164,1);
+  background: linear-gradient(347deg, rgba(247,208,136,1) 0%, rgba(254,164,1,0.47942927170868344) 10%, rgba(254,164,1,0.4318102240896359) 19%, rgba(254,164,1,0.4009978991596639) 25%, rgba(254,164,1,0) 48%, rgba(254,164,1,0.0844712885154062) 73%, rgba(254,164,1,0.29175420168067223) 90%, rgba(254,164,1,0.14329481792717091) 100%);
+}
 header{
   padding: 20px 5px;
   border-radius: 10px ;
@@ -11,13 +12,15 @@ header{
 .botonera a{
   padding: 10px 30px;
   color: #283542;
-  font-size: 20px;
   border-radius: 30px;
   cursor: pointer;
   font-family: sans-serif;
   text-decoration: none;
+  font-family: "Gabarito", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
 }
-.botonera ul li:hover {
+.sobre:hover {
   text-decoration: 2px underline #e66e1e;
   text-underline-offset: 10px; /*espaciado entre linea y texto*/
 }
@@ -28,11 +31,21 @@ header{
   justify-content: space-between;
   align-items: center;
 }
-.contacto{
+.contacto a{
+  color: #283542;
   align-items: center;
-  padding: 15px;
-  background-color: #e66e1e;
+  padding: 10px 20px;
+  background-color:#fe9001 ;
   border-radius: 20px;
+  text-decoration: none;
+}
+.contacto a:hover {
+  color: #ffffff;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #283542;
+  border-radius: 20px;
+  text-decoration: none;
 }
 nav ul li {
   display: inline;
@@ -40,7 +53,63 @@ nav ul li {
   justify-content: center;
   list-style: none;
 }
+h1{
+  font-family: "M plus code latin";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.8em;
+  color: #283542;
+  align-items: center;
+}
+
 /*fin de nav*/
+/*footer*/
+footer{
+  display: flex;
+  width: 100%;
+  background-color: #fe900128;
+  justify-content: space-around;
+  margin-top: 10px;
+  align-items: center;
+  box-sizing: border-box;
+}
+footer h3{
+  font-family: "Gabarito", sans-serif;
+  font-size: 1.5em;
+  color: #283542;
+  align-content: center;
+  margin: 10px;
+}
+.portfolio{
+  display:flex;
+  flex-direction: column;
+}
+.portfolio ul{
+  font-family: "Rubik", sans-serif;
+  color: #283542;
+  display: flex;
+  font-size: 0.8em;
+  gap: 20px;
+  align-items: center;
+  padding: 0px;
+  list-style: none;
+  padding: 5px 0px 0px 0px;
+}
+.redes h4{
+  font-family: "Gabarito", sans-serif;
+  font-size: 1.3em;
+  color: #283542;
+  padding: 0px 0px 0px 20px;
+}
+.redes ul{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 0px;
+  list-style: none;
+}
+/*fin de footer*/
+
 main, p {
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
@@ -73,14 +142,7 @@ main, p {
   margin: 20px 25px;
   padding: 8px 25px
 }
-h1{
-  font-family: "Knewave";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.2em;
-  color: #283542;
-  align-items: center;
-}
+
 .subrayado{
   width: 600px;
   height: 60px;
@@ -151,47 +213,6 @@ h3{
   text-decoration: none;
 }
 /*fin de hoover proyectos*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .expe{
   display: flex;
   justify-content: center;
@@ -339,11 +360,6 @@ h3{
   border-radius: 15px;
   background-color: lightgray 50% / cover no-repeat, lightgray 0px -1.846px / 100% 100.879% no-repeat;
   box-shadow: -8px 8px 21.6px -2px rgba(229, 106, 38, 0.54);
-}
-footer{
-  display: flex;
-  align-items: center;
-  flex-direction: column
 }
 .logoscontacto{
   padding: 0px 15px;
