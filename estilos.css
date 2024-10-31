@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 body {
-  background: rgb(254,164,1);
   background: linear-gradient(347deg, rgba(247,208,136,1) 0%, rgba(254,164,1,0.47942927170868344) 10%, rgba(254,164,1,0.4318102240896359) 19%, rgba(254,164,1,0.4009978991596639) 25%, rgba(254,164,1,0) 48%, rgba(254,164,1,0.0844712885154062) 73%, rgba(254,164,1,0.29175420168067223) 90%, rgba(254,164,1,0.14329481792717091) 100%);
   min-height: 100vh;
 }
@@ -229,7 +228,7 @@ h2{
   text-decoration: none;
 }
 /*fin de hoover proyectos*/
-/*img proyectos indext*/
+/*img proyectos index*/
 .libro{
   display: flex;
   justify-content: center;
@@ -257,24 +256,6 @@ h2{
   filter: invert(15%) sepia(19%) saturate(1113%) hue-rotate(168deg) brightness(93%) contrast(83%);
 }
 /*fin proy index*/
-/*SOBRE MI*/
-.container1{
-  display: flex;
-    flex-direction: column;
-    width: 40%;
-}
-.container2{
-  display: flex;
-  flex-direction: column;
-  width: 35%;
-}
-.clases{
-  display: flex;
-  justify-content: space-evenly;
-}
-.clases ul li{
-  list-style-type: none;
-}
 /*INICIO de FORMULARIO*/
 .formulario {
   position: relative;
@@ -385,3 +366,29 @@ button:after {
   margin: 0px 600px;
 }
 /*FIN de FORMULARIO*/
+/*GALERIA DESTILAR*/
+.galeria{
+  display: flex;
+  width: 1359px;
+  height: 1342px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.galeria img{
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+/*proyectos*/
+.textoproyecto{
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+.proyecto{
+  display: flex;
+  justify-content: center;
+}
