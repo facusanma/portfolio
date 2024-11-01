@@ -19,7 +19,7 @@ header{
   font-size: 1.5em;
   font-weight: 600;
 }
-.botonera:hover {
+.botonera a:hover {
   text-decoration: 2px underline #e66e1e;
   text-underline-offset: 10px; /*espaciado entre linea y texto*/
 }
@@ -38,14 +38,46 @@ nav ul li {
 }
 h1{
   font-family: "M plus code latin";
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
-  font-size: 0.8em;
+  font-size: 1em;
   color: #283542;
   align-items: center;
 }
-
 /*fin de nav*/
+/*HEADER M QUERY*/
+@media screen and (max-width: 600px) {
+  header {
+      padding: 15px 10px;
+      border-radius: 8px;
+  }
+
+  /* Estilos del nav */
+  .botonera {
+      width: 100%;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .botonera a {
+      padding: 8px 20px;
+      font-size: 1.2em;
+      border-radius: 20px;
+  }
+
+  nav ul li {
+      display: inline;
+      text-align: center;
+      margin: 5px 0;
+  }
+
+  h1 {
+      font-size: 1em;
+      text-align: center;
+      margin-bottom: 10px;
+  }
+}
+/*FIN HEADER M QUERY*/
 /*footer*/
 footer{
   display: flex;
@@ -97,10 +129,9 @@ footer h3{
 }
 /*fin de footer*/
 /*footer MEDIA QUERY*/
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   footer {
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     padding: 10px;
   }
 
@@ -113,17 +144,21 @@ footer h3{
   .portfolio ul {
     flex-direction: column;
     gap: 10px;
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   .redes h4 {
-    font-size: 1.1em;
+    font-size: 1em;
     text-align: center;
     padding: 10px 0;
   }
+  .redes img{
+    width: 30px;
+    height: 30px;
+  }
 }
 /*FIN FOOTER MEDIA QUERY*/
-
+/*COMIENZO DEL MAIN*/
 main{
   height: auto;
 }
@@ -139,14 +174,14 @@ main, p {
   border-radius: 20px;
   margin: 0px 0px 0px 145px;
 }
-#sobremi{ 
+.sobremi{ 
   display: flex;
   align-items: center;
   padding: 20px;
   margin: 30px 0px 0px 0px;
   justify-content: center;
 }
-#sobremi h2{
+.sobremi h2{
   text-orientation:sideways;
   justify-content: center;
   padding: 0px 22px;
@@ -192,7 +227,7 @@ h2{
   justify-content: center;
   overflow: hidden;
   perspective: 1000px;  
-  background-color: lightgray 50% / cover no-repeat, lightgray 0px -1.846px / 100% 100.879% no-repeat;
+  background-color: rgb(252, 151, 35) 50% / cover no-repeat, rgb(199, 0, 0) 0px -1.846px / 100% 100.879% no-repeat;
   box-shadow: -8px 8px 21.6px -2px rgba(229, 105, 38, 0.767);
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -223,7 +258,7 @@ h2{
   display: flex;
   justify-content: center;
   margin: 170px 0px;
-  font-size: 1.5em;
+  font-size: 1.7em;
   color: #283542;
   font-weight: 700;
   align-content: center;
@@ -273,8 +308,9 @@ h2{
   margin: 45px 100px 100px 100px
 }
 /*SPOTY*/
+/*FIN MAIN*/
 
-/*INDEX M QUERY*/
+/*MAIN M QUERY*/
 @media screen and (max-width: 600px) {
   main, p {
     font-size: 1em;
@@ -282,18 +318,19 @@ h2{
   }
 
   .foto {
-    margin: 0 auto;
-    width: 80%;
+    margin: 0px 55px;
+    align-content: center;
+    width: auto;
     border-radius: 10px;
   }
 
-  #sobremi {
+  .sobremi {
     flex-direction: column;
     padding: 10px;
     margin-top: 20px;
   }
 
-  #sobremi h2 {
+  .sobremi h2 {
     font-size: 1.8em;
     padding: 0;
     writing-mode: horizontal-tb;
@@ -331,7 +368,8 @@ h2{
 
   .card__title {
     margin: 10px 0;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    align-items: center;
   }
 
   .contenedorcard {
@@ -357,7 +395,7 @@ h2{
     margin: 20px 10px;
   }
 }
-/*INDEX M QUERY*/
+/*MAIN M QUERY*/
 
 /*INICIO de FORMULARIO*/
 .formulario {
