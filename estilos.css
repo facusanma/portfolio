@@ -410,7 +410,7 @@ h2{
   border: none;
   border-bottom: 2px solid #e66e1e;
   outline: 0;
-  font-size: 0.5em;
+  font-size: 0.7em;
   color: #ffffff;
   padding: 7px 0;
   background: transparent;
@@ -557,19 +557,8 @@ button:after {
 }
 /*proyectos*/
 
-.proyectofree{
-  padding: 5px 40px 10px 40px;
-  font-weight: 500;
-}
-.proyectolata{
-  padding: 5px 100px 10px 100px;
-  font-weight: 500;
-}
-.proyectolibro{
-  padding: 5px 100px 10px 100px;
-  font-weight: 500;
-}
-.proyectodesti{
-  padding: 5px 100px 10px 100px;
-  font-weight: 500;
+.proyectodesc{
+  width: 67%;
+  margin: 0px 75px;
+  font-weight: 450;
 }
